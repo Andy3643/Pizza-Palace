@@ -43,11 +43,35 @@ body{
   color: aliceblue;
   border-bottom: solid 3px aliceblue;
 }
+#place-order{
+  background: aqua;
+  height: 45px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+}
+#place-order:hover{
+  background: green;
+  color: white;
+}
+#add-another{
+  display: none;
+  background: aqua;
+  height: 45px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+}
+#add-another:hover{
+  background: green;
+  color: white;
+}
 .order-area{
   background-color: rgb(22, 22, 22);
 }
 .order-table{
   color: white;
+  display: none;
 }
 #table-head{
   color: white;
