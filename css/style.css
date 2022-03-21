@@ -8,3 +8,27 @@ body{
  background-size: cover;
  color: white;
 }
+.available-pizzas{
+  padding: 80px 150px;
+  background-color:rgb(22, 22, 22) ;
+}
+#pizza-images{
+  width: 50vh;
+}
+.pizza-description{
+  padding:  10px 50px;
+  color: white;
+}
+.order-now{
+  color: #FD9D3E;
+  font-weight: bolder;
+  font-size: 20px;
+  padding: 0 -10px;
+  border-bottom: solid 3px #FD9D3E;
+  width: 40%;
+  margin-left: 30%;
+}
+.order-now:hover{
+  color: aliceblue;
+  border-bottom: solid 3px aliceblue;
+}
