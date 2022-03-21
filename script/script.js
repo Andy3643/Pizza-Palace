@@ -26,18 +26,23 @@ $("#place-order").click(()=>{
 
 
   //constructors
-  function Pizza (crust, size, topping, delivery, number){
-    this.crust = crust;
-    this.size = size;
-    this.topping = topping;
-    this.delivery = delivery;
-    this.number = number;
-  }
+  $("#place-order").click(()=>{
 
+  
+    function Pizza (crust, size, topping, delivery, number){
+      this.crust = crust;
+      this.size = size;
+      this.topping = topping;
+      this.delivery = delivery;
+      this.number = number;
+    }
 
+    $("#crust-type").html($(".crust-type option:selected").text() + " - " + crust);
+    $("#crust-size").html($(".size-of-pizza option:selected").text() + " - " + size);
+    $("#topping").html($(".topping option:selected").text() + " - " + topping);
+    $("#total").html("total");
 
-
-
+  });
 
 
 
