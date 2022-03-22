@@ -78,6 +78,10 @@ $("#place-order").click(()=>{
     else {return 0}
     };
 
+    let newPizza = new Pizza(crust, size, topping, delivery);
+
+let totalPrice = newPizza.getCrustPrice() + newPizza.getSizePrice() +newPizza.getToppingPrice() +newPizza.getDeliveryPrice();
+
 
 
 
