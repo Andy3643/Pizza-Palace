@@ -147,8 +147,6 @@ $("#check-out").click(()=>{
     <td id="topping">${newPizza.topping}</td>
     <td id="total">${totalPrice}</td>
     </tr>`)
-
-
   });
 
   $("#check-out").click(()=>{
@@ -158,43 +156,8 @@ $("#check-out").click(()=>{
       sum += items
     }
     
-    $(".show-check-out h3 span").html("KSH" + sum);
+    $(".show-check-out h3 span").html("KSH" +""+ sum);
 
   })
   
-   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 })
