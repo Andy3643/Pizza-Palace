@@ -1,9 +1,18 @@
 body{
   background: rgb(22, 22, 22);
 }
-.nav-flex{
+nav{
   display: flex;
   justify-content: space-between;
+  color:white;
+
+}
+nav ul{
+  list-style: none;
+  display: flex;
+}
+nav ul li{
+  margin: 0 40px;
 }
 .foodmenu-intro{
  background:linear-gradient( rgba(0,0,0,0.4),rgba(0,0,0,0.4) ),url(../images/page2bg.jpg);
@@ -47,6 +56,15 @@ body{
   color: aliceblue;
   border-bottom: solid 3px aliceblue;
 }
+.place-order-now{
+  color: #FD9D3E;
+  font-size: 30px;
+  font-weight: bolder;
+  padding: 0 -10px;
+  border-bottom: solid 3px #FD9D3E;
+  width: 40%;
+  margin-left: 30%;
+}
 #place-order{
   background: aqua;
   height: 45px;
@@ -83,6 +101,20 @@ body{
 #ordered-pizzas{
   color: white;
 }
+#check-out{
+  background: aqua;
+  height: 45px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+}
+#check-out:hover{
+  background: green;
+  color: white;
+}
 .show-check-out{
   display: none;
+}
+.show-check-out h3 span{
+  color: #FD9D3E;
 }

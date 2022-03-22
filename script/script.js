@@ -9,6 +9,8 @@ $("#place-order").click(()=>{
 });
 $("#check-out").click(()=>{
   $(".show-check-out").show();
+  $("#check-out").hide();
+  $("#add-another").hide();
 })
 
 //busssiness logic
@@ -156,7 +158,7 @@ $("#check-out").click(()=>{
       sum += items
     }
     
-    $(".show-check-out h3 span").html(sum);
+    $(".show-check-out h3 span").html("KSH" + sum);
 
   })
   
