@@ -80,9 +80,14 @@ $("#place-order").click(()=>{
 
     let newPizza = new Pizza(crust, size, topping, delivery);
 
-let totalPrice = newPizza.getCrustPrice() + newPizza.getSizePrice() +newPizza.getToppingPrice() +newPizza.getDeliveryPrice();
+    let totalPrice = newPizza.getCrustPrice() + newPizza.getSizePrice() +newPizza.getToppingPrice() +newPizza.getDeliveryPrice();
 
-
+    $("#ordered-pizzas").append(`<tr>
+    <td id="crust-type">${newPizza.crust}</td>
+    <td id="crust-size">${newPizza.size}</td>
+    <td id="topping">${newPizza.topping}</td>
+    <td id="total">${totalPrice}</td>
+    </tr>`)
 
 
 
