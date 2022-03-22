@@ -23,7 +23,7 @@
 * JS - for the bussiness logic.
 
 ## Live Link
-#### Pizza Palace - (https://andy3643.github.io/Delani-Studio/)
+#### Pizza Palace - (https://andy3643.github.io/Pizza-Palace/)
 
 [Go Back to the top](#Pizza-Palace)
 
