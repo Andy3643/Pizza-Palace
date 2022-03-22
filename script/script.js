@@ -1,3 +1,5 @@
+let totalBill = []
+
 $(document).ready(function(){
 //user logic
 $("#place-order").click(()=>{
@@ -5,6 +7,9 @@ $("#place-order").click(()=>{
    $("#place-order").hide();
    $("#add-another").show();
 });
+$("#check-out").click(()=>{
+  $(".show-check-out").show();
+})
 
 //busssiness logic
   $("#place-order").click(()=>{
@@ -65,7 +70,7 @@ $("#place-order").click(()=>{
     let newPizza = new Pizza(crust, size, topping, delivery);
 
     let totalPrice = newPizza.getCrustPrice() + newPizza.getSizePrice() +newPizza.getToppingPrice() +newPizza.getDeliveryPrice();
-
+    totalBill.push(totalPrice) // pushing the totals into the empty array
     $("#ordered-pizzas").append(`<tr>
     <td id="crust-type">${newPizza.crust}</td>
     <td id="crust-size">${newPizza.size}</td>
@@ -133,7 +138,7 @@ $("#place-order").click(()=>{
     let newPizza = new Pizza(crust, size, topping, delivery);
 
     let totalPrice = newPizza.getCrustPrice() + newPizza.getSizePrice() +newPizza.getToppingPrice() +newPizza.getDeliveryPrice();
-
+    totalBill.push(totalPrice) // pushing the totals into the empty array
     $("#ordered-pizzas").append(`<tr>
     <td id="crust-type">${newPizza.crust}</td>
     <td id="crust-size">${newPizza.size}</td>
@@ -141,8 +146,21 @@ $("#place-order").click(()=>{
     <td id="total">${totalPrice}</td>
     </tr>`)
 
+
   });
 
+  $("#check-out").click(()=>{
+    let sum = 0;
+    parseInt(totalBill);
+    for(items of totalBill){
+      sum += items
+    }
+    
+    $(".show-check-out h3 span").html(sum);
+
+  })
+  
+   
 
 
 

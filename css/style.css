@@ -1,6 +1,10 @@
 body{
   background: rgb(22, 22, 22);
 }
+.nav-flex{
+  display: flex;
+  justify-content: space-between;
+}
 .foodmenu-intro{
  background:linear-gradient( rgba(0,0,0,0.4),rgba(0,0,0,0.4) ),url(../images/page2bg.jpg);
  background-repeat: no-repeat;
@@ -78,4 +82,7 @@ body{
 }
 #ordered-pizzas{
   color: white;
+}
+.show-check-out{
+  display: none;
 }
