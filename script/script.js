@@ -38,6 +38,52 @@ $("#place-order").click(()=>{
       // this.number = number;
     }
 
+    Pizza.prototype.getCrustPrice = function(){
+      if (this.crust ==="Neapolitan Pizza"){
+        return 150;
+      }
+      else if (this.crust ==="Wheat Thin Crust"){
+        return 90;
+      }
+      else if (this.crust ==="Cheese  Crust"){
+        return 100;
+      } else{ return 80}
+    };
+    Pizza.prototype.getSizePrice = function(){
+      if (this.size === "Large"){
+        return 800; 
+    }
+     else if ( this.size ==="Medium"){
+       return 600;
+    } else {return 450}
+    };
+    
+    Pizza.prototype.getToppingPrice = function(){
+    if (this.topping ==="Chicken"){
+      return 100
+    }
+    
+    else if (this.topping === "Meat"){
+      return 80
+    }
+    else if (this.topping === "Macon"){
+      return 120
+    }
+    else {return 60}
+    };
+    Pizza.prototype.getDeliveryPrice =function(){
+    if (this.delivery ==="Home"){
+      return 200
+    }
+    else {return 0}
+    };
+
+
+
+
+
+
+
     
   });
 
